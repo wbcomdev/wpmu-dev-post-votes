@@ -4,7 +4,7 @@
  */
 class Wdpv_WidgetNetworkPopular extends WP_Widget {
 
-	function Wdpv_WidgetNetworkPopular () {
+	function __construct () {
 		$widget_ops = array('classname' => __CLASS__, 'description' => __('Shows list of posts with highest number of votes on entire network.', 'wdpv'));
 		parent::__construct(__CLASS__, 'Top voted Posts on Network', $widget_ops);
 	}

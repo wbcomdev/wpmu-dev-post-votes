@@ -4,7 +4,7 @@
  */
 class Wdpv_WidgetVoting extends WP_Widget {
 
-	function Wdpv_WidgetVoting () {
+	function __construct () {
 		$widget_ops = array('classname' => __CLASS__, 'description' => __('Shows "Vote" box for current post/page with number of votes.', 'wdpv'));
 		parent::__construct(__CLASS__, __('Voting Widget', 'wdpv'), $widget_ops);
 	}
